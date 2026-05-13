@@ -4,6 +4,9 @@ const cookieParser = require('cookie-parser');
 
 const app = express();
 
+// Trust proxy for secure cookies in production (Render)
+app.set('trust proxy', 1);
+
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
