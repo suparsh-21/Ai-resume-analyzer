@@ -6,6 +6,7 @@ function Navbar() {
 
   async function handleLogout() {
     await logoutUser();
+    localStorage.removeItem("token");
     navigate("/login");
   }
 

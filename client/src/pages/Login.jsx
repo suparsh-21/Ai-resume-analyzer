@@ -16,7 +16,11 @@ function Login() {
     setLoading(true);
 
     try {
-      await loginUser({ email, password });
+      const res = await loginUser({ email, password });
+      // Save token for header-based auth (more reliable than cookies across domains)
+      if (res.data.token) {
+        localStorage.setItem("token", res.data.token);
+      }
       navigate("/dashboard");
     } catch (err) {
       setError(err.response?.data?.message || "Login failed");

@@ -3,7 +3,16 @@ import axios from "axios";
 // Use the Render URL as the base for API calls
 const API = axios.create({
   baseURL: import.meta.env.VITE_API_URL ? `${import.meta.env.VITE_API_URL}/api` : "https://ai-resume-analyzer-x1tc.onrender.com/api",
-  withCredentials: true, // so cookies (JWT token) are sent automatically
+  withCredentials: true, 
+});
+
+// Add a request interceptor to include the JWT token in headers
+API.interceptors.request.use((config) => {
+  const token = localStorage.getItem("token");
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
 });
 
 // ─── Auth ───────────────────────────────────────────────

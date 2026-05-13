@@ -30,7 +30,11 @@ function Register() {
     setLoading(true);
 
     try {
-      await registerUser({ username, email, password, securityQuestion, securityAnswer });
+      const res = await registerUser({ username, email, password, securityQuestion, securityAnswer });
+      // Save token for header-based auth
+      if (res.data.token) {
+        localStorage.setItem("token", res.data.token);
+      }
       navigate("/dashboard");
     } catch (err) {
       setError(err.response?.data?.message || "Registration failed");
