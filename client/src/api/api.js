@@ -1,8 +1,8 @@
 import axios from "axios";
 
-// All API calls go to our backend at port 5000
+// Use the Render URL as the base for API calls
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: import.meta.env.VITE_API_URL ? `${import.meta.env.VITE_API_URL}/api` : "https://ai-resume-analyzer-p0z0.onrender.com/api",
   withCredentials: true, // so cookies (JWT token) are sent automatically
 });
 
