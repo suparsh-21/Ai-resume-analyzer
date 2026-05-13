@@ -5,8 +5,9 @@ const { sendMail } = require("../utils/sendMail");
 
 const cookieOptions = {
   httpOnly: true,
-  sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
-  secure: process.env.NODE_ENV === "production",
+  // Use sameSite: 'none' for cross-domain cookies (Vercel -> Render)
+  sameSite: "none",
+  secure: true, // Required for sameSite: 'none'
 };
 
 
