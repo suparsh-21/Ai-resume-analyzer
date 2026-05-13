@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Use the Render URL as the base for API calls
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL ? `${import.meta.env.VITE_API_URL}/api` : "https://ai-resume-analyzer-p0z0.onrender.com/api",
+  baseURL: import.meta.env.VITE_API_URL ? `${import.meta.env.VITE_API_URL}/api` : "https://ai-resume-analyzer-x1tc.onrender.com/api",
   withCredentials: true, // so cookies (JWT token) are sent automatically
 });
 
