@@ -1,16 +1,60 @@
-# React + Vite
+# AI Resume Analyzer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered Resume Analyzer built using the MERN stack that helps users analyze resumes, calculate ATS scores, receive AI-generated feedback, and improve resume quality for better job opportunities.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# 🚀 Features
 
-## React Compiler
+- Upload and analyze resumes
+- ATS score generation
+- AI-based resume feedback
+- Resume history tracking
+- Authentication system
+- Responsive modern UI
+- Real-time analysis results
+- PDF resume support
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+# 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Frontend
+- React
+- Vite
+- Axios
+- React Router DOM
+- Tailwind CSS
+
+## Backend
+- Node.js
+- Express.js
+- MongoDB
+- JWT Authentication
+- Gemini/OpenAI API
+
+---
+
+# 📁 Project Structure
+
+```bash
+AI-Resume-Analyzer/
+│
+├── public/        # Frontend (React + Vite)
+├── server/        # Backend (Node.js + Express)
+└── README.md
+
+
+⚙️ Installation & Setup
+1️⃣ Clone the Repository
+git clone <your-repository-url>
+cd AI-Resume-Analyzer
+
+▶️ Run Frontend
+cd public
+npm run dev
+
+▶️ Run Backend
+cd server
+npm run dev
+
