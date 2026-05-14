@@ -40,7 +40,7 @@ An AI-powered Resume Analyzer built using the MERN stack that helps users analyz
 ```bash
 AI-Resume-Analyzer/
 │
-├── public/        # Frontend (React + Vite)
+├── client/        # Frontend (React + Vite)
 ├── server/        # Backend (Node.js + Express)
 └── README.md
 
