@@ -31,40 +31,40 @@ function Home() {
         <div className="cards-slider-container">
           
           <div className="feature-card card-1">
-            <p>"This AI analyzer found exact missing keywords from the job description! It's so easy to use, and my resume score skyrocketed."</p>
+            <p>"Detect missing keywords from job descriptions and improve your ATS compatibility instantly"</p>
             <div className="card-footer">
               <div className="card-avatar">🤖</div>
               <div>
-                <h4>Smart AI</h4>
-                <span>Keyword Gap Analysis</span>
+                <h4>Smart Keyword Analysis</h4>
+                <span>Resume Optimization</span>
               </div>
             </div>
           </div>
 
           <div className="feature-card card-2">
-            <p>"I couldn't imagine applying to jobs without it. The section-by-section feedback from Gemini is absolutely fantastic."</p>
+            <p>"Get section-by-section AI feedback to improve clarity, impact, and recruiter readability."</p>
             <div className="card-footer">
               <div className="card-avatar">✨</div>
               <div>
-                <h4>Gemini 1.5</h4>
-                <span>Actionable Feedback</span>
+                <h4>AI Feedback Engine</h4>
+                <span>Powered by Google Gemini</span>
               </div>
             </div>
           </div>
 
           <div className="feature-card card-3">
-            <p>"It perfectly matches what recruiters see in their Applicant Tracking Systems. Highly recommended tool for job seekers."</p>
+            <p>"Calculate ATS scores in real time based on formatting, keywords, and resume structure."</p>
             <div className="card-footer">
               <div className="card-avatar">📊</div>
               <div>
-                <h4>ATS Score</h4>
+                <h4>ATS Score Analysis</h4>
                 <span>Real-time Scoring</span>
               </div>
             </div>
           </div>
 
           <div className="feature-card card-4">
-            <p>"Built specifically for modern job applications. Easy to use, great ui, and the results are instant and highly accurate."</p>
+            <p>"Upload PDF or DOCX resumes and receive instant analysis within seconds."</p>
             <div className="card-footer">
               <div className="card-avatar">🚀</div>
               <div>
