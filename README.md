@@ -58,3 +58,32 @@ npm run dev
 cd server
 npm run dev
 
+# 🐳 Docker Support
+
+## Frontend Image
+
+```bash
+docker pull suparsh001/airesumeanalyzer-frontend
+```
+
+## Backend Image
+
+```bash
+docker pull suparsh001/airesumeanalyzer-backend
+```
+
+---
+
+# ▶️ Run Frontend Container
+
+```bash
+docker run -p 80:80 suparsh001/airesumeanalyzer-frontend
+```
+
+---
+
+# ▶️ Run Backend Container
+
+```bash
+docker run -p 5000:5000 suparsh001/airesumeanalyzer-backend
+```
